@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Validate Form</title>
+            <script>
+                function validateform()
+                {
+                    var uname = document.getElementById('txtusername').value;
+                    var pass = document.getElementById('txtpassword').value;
+                    if(/^[A-Z][a-zA-Z]{4,8}$/.test(uname) && /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/.test(pass))  
+                    {
+                        window.alert('Login Successful');
+                    }
+                    else
+                    {
+                        window.alert('Login Unsuccessful');
+                    }
+                   
+                }
+            </script>
+        
+    </head>
+    <body>
+        Username <input type="text" id="txtusername" placeholder="Enter Usrename" /><br>
+        Full Name <input type="text" id="txtfullname" placeholder="Enter Full Name"/><br>
+        Department <input type="text" id="txtdepartment" placeholder="Enter Department"/><br>
+        Address <textarea rows="6" cols="6" placeholder="Enter Address"></textarea><br>
+        Password <input type="password" id="txtpassword" placeholder="Enter Password"/><br>
+        <button type="button" onclick="validateform()">Validate</button><br>
+    </body>
+</html>
