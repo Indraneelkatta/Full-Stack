@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Validate Password</title>
+            <script>
+                function validatepassword()
+                {
+                    var pass = document.getElementById('txtpassword').value;
+                    if(/^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%]).{5,12}$/.test(pass))  
+                    {
+                        window.alert('Valid Password');
+                    }
+                    else
+                    {
+                        window.alert('Invalid Password');
+                    }
+                   
+                }
+            </script>
+        
+    </head>
+    <body>
+        Password <input type="password" id="txtpassword" placeholder="Enter Password"/><br>
+        <button type="button" onclick="validatepassword()">Validate</button><br>
+    </body>
+</html>
