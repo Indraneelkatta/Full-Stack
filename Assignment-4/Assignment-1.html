@@ -7,7 +7,7 @@
                 {
                     var uname = document.getElementById('txtusername').value;
                     var pass = document.getElementById('txtpassword').value;
-                    if(/^[A-Z][a-zA-Z]{4,8}$/.test(uname) && /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/.test(pass))  
+                    if(/^[A-Z][a-zA-Z]{4,8}$/.test(uname) && /^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[^!@#$%]).{8,15}$/.test(pass))  
                     {
                         window.alert('Login Successful');
                     }
