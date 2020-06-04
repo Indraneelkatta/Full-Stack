@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link href="table.css" rel="stylesheet"/>
+        <style>
+            .a{
+                font-size:xx-large ;
+                text-align: center;
+                background-color: aquamarine;
+            }
+            p{
+                font-size: x-large;
+            }
+        </style>
+         <script>
+            function validateform()
+            {
+                var c=0;
+                var uname = document.getElementById('txtusername').value;
+                var pass = document.getElementById('txtpassword').value;
+                var rpass = document.getElementById('txtconfirmpassword').value;
+                var email = document.getElementById("txtemailid").value;
+                var mobile = document.getElementById("txtmobile").value;
+                if(/^[A-Z][a-zA-Z]{4,20}$/.test(uname))  
+                {
+                    window.alert('Username entered Successful');
+                    c++;
+                }
+                else
+                {
+                    window.alert('Username should contain atleast 1 Uppercase character \n Username should contain ateast 4 characters \n Username should not contain more than 20 characters');
+                }
+                if(/^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%]).{8,15}$/.test(pass))  
+                {
+                    window.alert('Passord entered Successful');
+                    c++;
+                }
+                else
+                {
+                    window.alert('Password should contain atleast 1 Uppercase character \n Password should contain atleast 1 lower character \n Password should contain atleast 1 special character \n Password should contain atleast 1 digit \n Password should contain ateast 8 characters \n Password should not contain more than 15 characters ');
+                }
+                if(rpass==pass)
+                {
+                    window.alert('Password is confirmed');
+                    c++;
+                }
+                else
+                {
+                    window.alert('Re-Enter the Password');
+                }
+                if(/^[A-Za-z][A-Za-z0-9]{5,15}[@][A-Za-z]{2,10}[.][A-Za-z]{2,3}$/.test(email))
+                {
+                    window.alert('Valid Email');
+                    c++;
+                }
+                else
+                {
+                    window.alert('Invalid Email');
+                }
+                if(/^[6-9][0-9]{9}$/.test(mobile) || /^[0][6-9][0-9]{9}$/.test(mobile) || /^[+][9][1][6-9][0-9]{9}$/.test(mobile))
+                {
+                    window.alert('Valid Number');
+                    c++;
+                }
+                else
+                {
+                     window.alert('Invalid Number');
+                }
+                if(c==5)
+                {
+                    window.alert('Registration succesful');
+                }
+                else
+                {
+                    window.alert('Registration unsuccesful');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <a href="TandPForm.html"><li>Home</li></a>
+                        <a href="aboutus.html"><li>AboutUs</li></a>
+                        <a href="contactus.html"><li>ContactUs</li></a>
+                        <a href="login,html"><li>Login</li></a>
+                        <a href="feedback.html"><li>Feedback</li></a>
+                        <a href="Registration.html"><li>Registration</li></a>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p class="a">Welcome to the Login page</p><br>
+        Username  <input type="text" id="txtusername" placeholder="Enter Usrename" /><br><br>
+        Password  <input type="password" id="txtpassword" placeholder="Enter Password"/><br><br>
+        Confirm Password  <input type="password" id="txtconfirmpassword" placeholder="Re-enter Password"/><br><br>
+        Email-Id  <input type="email" id="txtemailid" placeholder="Enter Email-Id"/><br><br>
+        Mobile number  <input type="text" id="txtmobile" placeholder="Enter Mobile number"/><br><br>
+        Full Name  <input type="text" id="txtfullname" placeholder="Enter Full Name"/><br><br>
+        Department  <input type="text" id="txtdepartment" placeholder="Enter Department"/><br><br>
+        Address  <br><br><textarea rows="10" cols="20" placeholder="Enter Address"></textarea><br><br>
+        <button type="button" onclick="validateform()">Submit</button><br>
+    </body>
+</html>

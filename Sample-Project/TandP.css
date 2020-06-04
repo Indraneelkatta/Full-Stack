@@ -1,0 +1,57 @@
+table{
+    border:5px solid black;
+    border-bottom:0px;
+    
+}
+.a{
+    background-color:lightskyblue;
+}
+.b {
+    border:5px solid red;
+    margin:5px;
+    padding:3px;
+    background-color:orange;
+}
+th{
+    font-size: x-large;
+}
+ul a{
+    
+    list-style: none;
+    display:inline-block;
+    text-decoration: none;
+}
+   
+
+ul{
+    border:5px solid black;
+    margin:0px;
+    width:760px;
+}
+li{
+    border:3px solid red;
+    margin:5px;
+    font-size: x-large;
+    font-weight: bold;
+    padding-right:5px;
+    background-color:orange;
+    color:black;
+
+}
+.han {
+    margin:5px;
+    margin-left:0px;
+}
+.b{
+    background-color: none;
+}
+.c{
+    border-bottom:5px solid black;
+    border-top: none;
+    width:825px;
+}
+p{
+    font-size: large;
+    font-weight:1000px;
+}
+   

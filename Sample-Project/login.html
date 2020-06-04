@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link href="table.css" rel="stylesheet"/>
+        <style>
+            .a{
+                font-size:xx-large ;
+                text-align: center;
+                background-color: aquamarine;
+            }
+            p{
+                font-size: x-large;
+            }
+        </style>
+         <script>
+            function validateform()
+            {
+                var uname = document.getElementById('txtusername').value;
+                var pass = document.getElementById('txtpassword').value;
+                if(/^[A-Z][a-zA-Z]{4,20}$/.test(uname) && /^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%]).{8,15}$/.test(pass))  
+                {
+                    window.alert('Login Successful');
+                }
+                else
+                {
+                    window.alert('Login Unsuccessful');
+                }
+               
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <a href="TandPForm.html"><li>Home</li></a>
+                        <a href="aboutus.html"><li>AboutUs</li></a>
+                        <a href="contactus.html"><li>ContactUs</li></a>
+                        <a href="login,html"><li>Login</li></a>
+                        <a href="feedback.html"><li>Feedback</li></a>
+                        <a href="Registration.html"><li>Registration</li></a>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p class="a">Welcome to the Login page</p><br>
+        Username <input type="text" id="txtusername" placeholder="Enter Usrename" /><br><br>
+        Password <input type="password" id="txtpassword" placeholder="Enter Password"/><br><br>
+        <button type="button" onclick="validateform()">Submit</button><br>
+    </body>
+</html>
