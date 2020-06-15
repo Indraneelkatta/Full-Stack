@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery Intoduction</title>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".btnfadeIn").click(function(){
+                    $(".class1").fadeIn(3000);
+                });
+                
+                $(".btnfadeOut").click(function(){
+                    $(".class1").fadeOut(2000);
+                });
+                
+                $(".btnfadeToggle").click(function(){
+                    $(".class1").fadeToggle();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1 class="class1">GITAM School of Technology</h1>
+        <button type="button" class="btnfadeOut">FadeOut</button>
+        <button type="button" class="btnfadeIn">FadeIn</button>
+        <button type="button" class="btnfadeToggle">FadeToggle</button>
+    </body>
+</html>

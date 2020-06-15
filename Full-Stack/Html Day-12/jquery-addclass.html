@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btnAddClass").click(function(){
+                    $("p").addClass("test");
+                });
+            });
+        </script>
+        <style>
+            p{
+                font-size: medium;
+                font-style: normal;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .test{
+                font-style: italic;
+                font-size: xx-large;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <p>GITAM School of Technology</p>
+        <button type="button" id="btnAddClass">AddClass</button>
+    </body>
+</html>

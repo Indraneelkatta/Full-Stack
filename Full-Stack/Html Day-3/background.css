@@ -1,0 +1,48 @@
+.a1{
+    color: darkblue;
+}
+.a2{
+    background-color: darkgoldenrod;
+}
+.a3{
+    background-color: darkgreen;
+}
+.b1{
+    width:100%;
+    height:70%;
+    background-image: url('backimg-1.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.b2{
+    width:100%;
+    height:70%;
+    background-image: url('backimg-2.jpeg');
+}
+.b3{
+    width:100%;
+    height:70%;
+    background-image: url('backimg-3.jpeg');
+}
+.c1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-variant: unset;
+    font-weight: 700;
+}
+.c2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-weight: bolder;
+   
+}
+.c3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: small;
+    font-style: normal;
+    font-variant: initial;
+    font-weight: bolder;
+}

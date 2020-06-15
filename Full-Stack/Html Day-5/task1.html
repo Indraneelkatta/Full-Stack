@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Submit()
+            {
+                var uname,upass,aname,apass;
+                uname = document.getElementById('txtusername').value;
+                upass = document.getElementById('txtpassword').value;
+                aname="Indra";
+                apass="12345"
+                if(uname==aname && upass==apass)
+                {
+                    window.alert("Succesful Login");
+                }
+                else
+                {
+                    window.alert("Unuccesful Login");
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        Username <input type="text" id="txtusername"/>
+        Password <input type="password" id="txtpassword"/>
+        <button type="button" onclick="Submit()">Submit</button>
+    </body>
+</html>

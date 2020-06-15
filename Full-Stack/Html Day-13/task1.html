@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sliders</title>
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
+        <script type="text/javascript">
+    $(document).ready(function(){
+        $('.bxslider').bxSlider({
+            auto: true,
+            autoControls: true,
+            stopAutoOnClick: true,
+            pager: true,
+            slideWidth: 600
+        });
+    });
+   </script>
+    <style>
+       
+        
+        nav{
+            border: 5px solid green;
+            margin:5px;
+        }
+        
+    </style>
+    </head>
+    <body>
+
+        
+        <div class="container-fluid">
+            <img src="images (1).jpg" width="100%" height="100px"/>
+        </div>
+     
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item font-weight-bold">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item font-weight-bold">
+                            <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item font-weight-bold">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item font-weight-bold">
+                        <a href="#" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <table>
+            <tr class="a1">
+                <td>
+                    <div class="bxslider">
+                        <div><img src="backimg-1.jpg" height=""/></div>
+                        <div><img src="backimg-2.jpeg" width="300px"/></div>
+                        <div><img src="backimg-3.jpeg" height="300px"/></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

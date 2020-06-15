@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video Tag Example</title>
+    </head>
+    <body>
+        <audio id="a1">
+            <source src="file_example_MP3_700KB.mp3" type="audio/mp3"/>
+        </audio>
+        <button onclick="play()" type="button">Play</button>
+        <button onclick="pause()" type="button">Pause</button>
+        <script>
+            var x= document.getElementById("a1");
+
+            function play(){
+                x.play();
+            }
+            function pause(){
+                x.pause();
+            }
+        </script>
+    </body>
+</html>

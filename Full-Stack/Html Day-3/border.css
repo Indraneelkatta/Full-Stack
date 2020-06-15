@@ -1,0 +1,44 @@
+.a1{
+    text-align: center;
+    border-style: dotted;
+    border-width: 10px;
+    border-color: lawngreen;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 40px;
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.a2{
+    text-align: center;
+    border-style: double;
+    border-width: 5px;
+    border-color: lightsalmon;
+    border-radius: 7px;
+    margin:20px;
+    padding:30px;
+}
+.a3{
+    text-align: center;
+    border-style: groove;
+    border-width: 15px;
+    border-color: magenta;
+    border-radius: 5px;
+    margin:20px;
+    padding:50px;
+}
+.a4{
+    border-top-color: mediumspringgreen;
+    border-right-color: mediumvioletred;
+    border-bottom-color: orange;
+    border-left-color: orangered;
+    text-align: center;
+    border-radius: 10px;
+    border-style: double;
+    margin:20px;
+    padding:1px 400px 100px 50px;
+}

@@ -1,0 +1,14 @@
+select{
+    width:50%;
+    margin:20px;
+    padding:5px;
+    border:2px solid red;
+    font-size: medium;
+    font-variant: normal;
+    color:darkviolet;
+    background-color: lightcyan;
+
+}
+option{
+    font-size: xx-large;
+}

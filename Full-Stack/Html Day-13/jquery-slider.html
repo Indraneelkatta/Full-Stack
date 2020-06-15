@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sliders</title>
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
+        <script type="text/javascript">
+    $(document).ready(function(){
+        $(".slider").bxSlider({
+            mode: 'fade',
+            captions: true,
+            slidewidth: 600,
+            slideheight: 400
+
+        });
+    });
+
+        </script>
+    </head>
+    <body>
+        <div class="slider">
+            <div><img src="backimg-1.jpg" title="Img1"/></div>
+            <div><img src="backimg-2.jpeg" title="Img2"/></div>
+            <div><img src="backimg-3.jpeg" title="Img3"/></div>
+        </div>
+    </body>
+</html>

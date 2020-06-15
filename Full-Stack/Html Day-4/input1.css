@@ -1,0 +1,33 @@
+table,th,td{
+    border:2px solid red;
+}
+table{
+    width:100%;
+}
+input[type=text],input[type=password]{
+width:100%;
+margin:5px;
+padding:8px;
+box-sizing:border-box;
+border:2px solid red;
+border-radius: 4px;
+background-color: yellow;
+color:black;
+}
+label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    color:darkblue;
+    
+}
+th{
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
+input[type=button]{
+    font-size: large;
+    font-variant: small-caps;
+    background-color: lightgray;
+    color:darkmagenta;
+}

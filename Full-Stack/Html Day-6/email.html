@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validate Email ID</title>
+        <script>
+            function validateemail()
+            {
+                var val = document.getElementById("txtmobile").value;
+                if(/^[a-zA-Z0-9._-]{6,12}[@][a-z]{3,15}[.][a-z]{2,6}$/.test(val))
+                {
+                    window.alert('Valid Email');
+                }
+                else
+                {
+                    window.alert('Invalid Email');
+                    document.getElementById("txtmobile").focus();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="mobileno.html" method="POST"></form>
+        <input type="text" id="txtmobile"/><br>
+        <button type="button" onclick="validateemail()">Validate</button>
+        </form>
+    </body>
+</html>
